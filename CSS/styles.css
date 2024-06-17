@@ -1,0 +1,163 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font: 18px "Lato", sans-serif;
+  color: #fff;
+  scroll-snap-type: y mandatory;
+  min-height: 100vh;
+}
+
+.wrapper-scroll-snap {
+}
+
+.wrapper {
+  /* overflow-x: hidden; */
+}
+
+.about {
+  color: #fff;
+  background-color: #19262c;
+  scroll-snap-align: start;
+  padding: 1.5rem;
+}
+
+.about-image {
+  float: left;
+  margin: 0 1.5rem 0 0;
+}
+
+.about-text {
+  text-align: justify;
+  min-height: 432px;
+  font-size: 1.15rem;
+}
+
+.section {
+  position: relative;
+}
+
+.content {
+  color: #fff;
+  background-color: #19262c;
+  padding: 1rem 2rem;
+  text-align: justify;
+  scroll-snap-align: start;
+}
+
+.my-work-experience-block {
+  scroll-snap-align: start;
+}
+
+.section .content {
+  position: relative;
+}
+
+.border {
+  /* background-color: #030405; */
+  /* font-size: 25px; */
+  /* color: #fff; */
+  padding: 2rem;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
+  min-height: 100vh;
+  position: relative;
+  opacity: 0.7;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-snap-align: center;
+}
+
+.bgimg-1 {
+  background-image: url("/imgs/summer_1.jpg");
+}
+
+.bgimg-2 {
+  background-image: url("/imgs/rain_1.jpg");
+}
+
+.bgimg-3 {
+  background-image: url("/imgs/snow_1.jpg");
+}
+
+.bgimg-4 {
+  background-image: url("/imgs/spring_1.jpg");
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+}
+
+.caption span.border {
+  background-color: rgba(25, 38, 44, 0.9);
+  opacity: 1;
+  color: #fff;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  font-size: 2rem;
+  letter-spacing: 0.75rem;
+}
+
+.cr-text {
+  position: absolute;
+  left: 42%;
+  top: 95%;
+  width: 100%;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+  /* Initially hidden */
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Increase z-index to ensure visibility */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M12 5L5 12M12 5L19 12"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+#scrollToTopBtn:hover {
+  background-color: black;
+  transform: scale(1.2);
+}
+
+#scrollToTopBtn svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+/* Turn off parallax scrolling for tablets and phones also disable the photo for width less than 600px*/
+@media only screen and (max-device-width: 680px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
+
+  .about-image {
+    display: none;
+  }
+}

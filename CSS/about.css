@@ -1,0 +1,15 @@
+body {
+  margin: 20px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.about-image {
+  float: left;
+  margin: 5px;
+}
+
+.about-text {
+  text-align: justify;
+  font-size: 25px;
+}
