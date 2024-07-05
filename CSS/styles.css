@@ -12,12 +12,12 @@ html {
 }
 
 .wrapper {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .about {
   color: #fff;
-  background-color: #19262c;
+  background-color: rgba(25, 38, 44, 0.9);
   scroll-snap-align: start;
   padding: 1.5rem;
 }
@@ -39,7 +39,7 @@ html {
 
 .content {
   color: #fff;
-  background-color: #19262c;
+  background-color: rgba(25, 38, 44, 0.9);
   padding: 1rem 2rem;
   text-align: justify;
   scroll-snap-align: start;
@@ -47,6 +47,25 @@ html {
 
 .my-work-experience-block {
   scroll-snap-align: start;
+}
+
+.my-work-postion {
+}
+
+.company-name {
+  color: #9a7970;
+}
+
+.my-work-divider {
+  font-size: 1.2rem;
+
+  color: #fff;
+}
+.my-work-divider {
+  line-height: 1rem;
+}
+.my-work-range {
+  color: #9a8f70;
 }
 
 .section .content {
@@ -97,7 +116,7 @@ html {
   width: 100%;
 }
 
-.caption span.border {
+.caption h3.border {
   background-color: rgba(25, 38, 44, 0.9);
   opacity: 1;
   color: #fff;
@@ -121,8 +140,8 @@ html {
   right: 2rem;
   display: none;
   /* Initially hidden */
-  background-color: #000;
-  color: white;
+  background-color: rgba(25, 38, 44, 1);
+  color: #fff;
   border: none;
   border-radius: 10%;
   width: 50px;
@@ -139,14 +158,18 @@ html {
 }
 
 #scrollToTopBtn:hover {
-  background-color: black;
+  background-color: rgba(25, 38, 44, 1);
   transform: scale(1.2);
+}
+
+#scrollToTopBtn:hover svg {
+  fill: #000;
 }
 
 #scrollToTopBtn svg {
   width: 24px;
   height: 24px;
-  fill: white;
+  fill: #fff;
 }
 
 /* Turn off parallax scrolling for tablets and phones also disable the photo for width less than 600px*/
